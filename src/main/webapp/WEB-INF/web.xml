@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="2.4"
+         xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+  <!--<!— Servlet Filters ================================================ —>-->
+
+  <!--<!— Servlet Configuration ========================================== —>-->
+
+  <!--<!—-->
+  <!-- - Servlet that dispatches requests to the Spring managed block servlets-->
+  <!--—>-->
+  <servlet>
+    <servlet-name>Servlet</servlet-name>
+    <servlet-class>com.epam.lab.Servlet</servlet-class>
+    <init-param>
+      <param-name>name</param-name>
+      <param-value>Vitaliy</param-value>
+    </init-param>
+
+  </servlet>
+
+  <!--<!— URL space mappings ============================================= —>-->
+
+  <!--<!—-->
+  <!-- - Cocoon handles all the URL space assigned to the webapp using its sitemap.-->
+  <!-- - It is recommended to leave it unchanged. Under some circumstances though-->
+  <!-- - (like integration with proprietary webapps or servlets) you might have-->
+  <!-- - to change this parameter.-->
+  <!--—>-->
+  <servlet-mapping>
+    <servlet-name>Servlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+  <context-param>
+    <param-name>title</param-name>
+    <param-value>Serv</param-value>
+  </context-param>
+
+  <!--<listener>-->
+  <!--<listener-class></listener-class>-->
+  <!--</listener>-->
+
+</web-app>
