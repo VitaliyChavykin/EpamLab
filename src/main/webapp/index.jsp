@@ -20,7 +20,7 @@
 
                 type: "Get",
                 // url work only if after "/" any symbol
-                url: "/nobody know, how it's rly works",
+                url: "/nobody know, how it rly works",
                 success: function(msg){$('#output').html(msg);}
             });
         });
@@ -28,7 +28,7 @@
         $('#putState').click(function (){
             $.ajax({
                 type: "put",
-                url: "/nobody know, how it's rly works",
+                url: "/nobody know, how it rly works",
                 success: function(msg){$('#output').html(msg);}
             });
         });
@@ -36,7 +36,7 @@
         $('#postState').click(function (){
             $.ajax({
                 type: "post",
-                url: "/nobody know, how it's rly works",
+                url: "/nobody know, how it rly works",
                 success: function(msg){$('#output').html(msg);}
             });
         });
@@ -44,7 +44,7 @@
         $('#deleteState').click(function (){
             $.ajax({
                 type: "delete",
-                url: "/nobody know, how it's rly works",
+                url: "/nobody know, how it rly works",
                 success: function(msg){$('#output').html(msg);
                 }
             });
